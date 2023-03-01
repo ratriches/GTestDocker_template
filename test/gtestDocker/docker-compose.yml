@@ -1,0 +1,7 @@
+services:
+  gtests:
+    build: .
+    volumes:
+      - ../../source:/test/src
+      - ../test_set:/test/aux
+      - ../result:/test/result
