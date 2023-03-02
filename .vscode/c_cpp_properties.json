@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "GTests",
+            "includePath": [
+                "${workspaceFolder}/source/**/*"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        }
+    ],
+    "version": 4
+}

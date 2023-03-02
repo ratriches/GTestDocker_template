@@ -3,7 +3,7 @@
 #include "world/world.h"
 
 // Demonstrate some basic assertions.
-TEST(worldTest, BasicAssertions) {
+TEST(worldTest, func_div) {
   // Expect two strings not to be equal.
   EXPECT_STRNE("hello", "world");
   // Expect equality.
