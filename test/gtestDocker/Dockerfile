@@ -1,7 +1,6 @@
-FROM gcc:12.2
+FROM alpine:3.17
 
-RUN apt-get update
-RUN apt-get install -y cmake 
+RUN apk add build-base cmake 
 
 WORKDIR /test
 ADD ./PreTest.sh /test

@@ -3,7 +3,7 @@
         {
             "name": "GTests",
             "includePath": [
-                "${workspaceFolder}/source/**/*"
+                "${workspaceFolder}/source/**"
             ],
             "defines": [
                 "_DEBUG",
