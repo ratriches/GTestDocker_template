@@ -4,6 +4,7 @@ set -e # exit on first error
 
 echo ">>>> Running gtests"
 
+# NOTE: docker pwd > /test/, see Dockerfile
 mkdir -p ./ontest/build 
 cp ./aux/CMakeLists.txt ./ontest/
 cd ./ontest/build
@@ -14,6 +15,8 @@ cmake ..
 # make clean # nao precisa de executou rm -rf
 make
 
-date > ../../result/result.txt
-ctest >> ../../result/result.txt
+# see docker-compose.yml volumes
+mkdir -p /test/result/
+date > /test/result/result.txt
+ctest >> /test/result/result.txt
 

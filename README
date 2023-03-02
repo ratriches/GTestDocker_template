@@ -1,8 +1,6 @@
 
 - you will need docker and docker-compose installed
 
-- if not exist, create "test/result" dir
-
 - to run
 > RunTests.bat // windows
 > ./RunTests.sh // linux
