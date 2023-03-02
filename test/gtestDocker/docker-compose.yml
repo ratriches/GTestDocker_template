@@ -3,5 +3,6 @@ services:
     build: .
     volumes:
       - ../../source:/test/src
+      - ../tests:/test/testsrc
       - ../test_set:/test/aux
       - ../result:/test/result

@@ -19,10 +19,15 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 set(basedir ../src/)
+set(basetestdir ../testsrc/)
+include_directories(${basedir})
 
 add_executable(
   hello_test
-  ${basedir}hello_test.cc
+  ${basedir}hello.c
+  ${basetestdir}test_hello.cc
+  ${basedir}world/world.c
+  ${basetestdir}world/test_world.cc
 )
 target_link_libraries(
   hello_test
